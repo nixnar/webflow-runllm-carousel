@@ -31,19 +31,23 @@ ___CSS_LOADER_EXPORT___.push([module.id, `
   /*
 ! tailwindcss v3.4.11 | MIT License | https://tailwindcss.com
 */
+
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
+
 .tailwind *,.tailwind ::before,.tailwind ::after {
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
   border-color: #e5e7eb; /* 2 */
 }
+
 .tailwind ::before,.tailwind ::after {
   --tw-content: '';
 }
+
 /*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -53,6 +57,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `
 6. Use the user's configured \`sans\` font-variation-settings by default.
 7. Disable tap highlights on iOS
 */
+
 .tailwind html,.tailwind :host {
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -64,100 +69,124 @@ ___CSS_LOADER_EXPORT___.push([module.id, `
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
 }
+
 /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from \`html\` so users can set them as a class directly on the \`html\` element.
 */
+
 .tailwind body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
 }
+
 /*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 3. Ensure horizontal rules are visible by default.
 */
+
 .tailwind hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
   border-top-width: 1px; /* 3 */
 }
+
 /*
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
+
 .tailwind abbr:where([title]) {
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
+
 /*
 Remove the default font size and weight for headings.
 */
+
 .tailwind h1,.tailwind h2,.tailwind h3,.tailwind h4,.tailwind h5,.tailwind h6 {
   font-size: inherit;
   font-weight: inherit;
 }
+
 /*
 Reset links to optimize for opt-in styling instead of opt-out.
 */
+
 .tailwind a {
   color: inherit;
   text-decoration: inherit;
 }
+
 /*
 Add the correct font weight in Edge and Safari.
 */
+
 .tailwind b,.tailwind strong {
   font-weight: bolder;
 }
+
 /*
 1. Use the user's configured \`mono\` font-family by default.
 2. Use the user's configured \`mono\` font-feature-settings by default.
 3. Use the user's configured \`mono\` font-variation-settings by default.
 4. Correct the odd \`em\` font sizing in all browsers.
 */
+
 .tailwind code,.tailwind kbd,.tailwind samp,.tailwind pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
   font-feature-settings: normal; /* 2 */
   font-variation-settings: normal; /* 3 */
   font-size: 1em; /* 4 */
 }
+
 /*
 Add the correct font size in all browsers.
 */
+
 .tailwind small {
   font-size: 80%;
 }
+
 /*
 Prevent \`sub\` and \`sup\` elements from affecting the line height in all browsers.
 */
+
 .tailwind sub,.tailwind sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
 }
+
 .tailwind sub {
   bottom: -0.25em;
 }
+
 .tailwind sup {
   top: -0.5em;
 }
+
 /*
 1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 3. Remove gaps between table borders by default.
 */
+
 .tailwind table {
   text-indent: 0; /* 1 */
   border-color: inherit; /* 2 */
   border-collapse: collapse; /* 3 */
 }
+
 /*
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
 3. Remove default padding in all browsers.
 */
+
 .tailwind button,.tailwind input,.tailwind optgroup,.tailwind select,.tailwind textarea {
   font-family: inherit; /* 1 */
   font-feature-settings: inherit; /* 1 */
@@ -170,147 +199,190 @@ Prevent \`sub\` and \`sup\` elements from affecting the line height in all brows
   margin: 0; /* 2 */
   padding: 0; /* 3 */
 }
+
 /*
 Remove the inheritance of text transform in Edge and Firefox.
 */
+
 .tailwind button,.tailwind select {
   text-transform: none;
 }
+
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Remove default button styles.
 */
+
 .tailwind button,.tailwind input:where([type='button']),.tailwind input:where([type='reset']),.tailwind input:where([type='submit']) {
   -webkit-appearance: button; /* 1 */
   background-color: transparent; /* 2 */
   background-image: none; /* 2 */
 }
+
 /*
 Use the modern Firefox focus style for all focusable elements.
 */
+
 .tailwind :-moz-focusring {
   outline: auto;
 }
+
 /*
 Remove the additional \`:invalid\` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
 */
+
 .tailwind :-moz-ui-invalid {
   box-shadow: none;
 }
+
 /*
 Add the correct vertical alignment in Chrome and Firefox.
 */
+
 .tailwind progress {
   vertical-align: baseline;
 }
+
 /*
 Correct the cursor style of increment and decrement buttons in Safari.
 */
+
 .tailwind ::-webkit-inner-spin-button,.tailwind ::-webkit-outer-spin-button {
   height: auto;
 }
+
 /*
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
+
 .tailwind [type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
+
 /*
 Remove the inner padding in Chrome and Safari on macOS.
 */
+
 .tailwind ::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
 /*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Change font properties to \`inherit\` in Safari.
 */
+
 .tailwind ::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+
 /*
 Add the correct display in Chrome and Safari.
 */
+
 .tailwind summary {
   display: list-item;
 }
+
 /*
 Removes the default spacing and border for appropriate elements.
 */
+
 .tailwind blockquote,.tailwind dl,.tailwind dd,.tailwind h1,.tailwind h2,.tailwind h3,.tailwind h4,.tailwind h5,.tailwind h6,.tailwind hr,.tailwind figure,.tailwind p,.tailwind pre {
   margin: 0;
 }
+
 .tailwind fieldset {
   margin: 0;
   padding: 0;
 }
+
 .tailwind legend {
   padding: 0;
 }
+
 .tailwind ol,.tailwind ul,.tailwind menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 /*
 Reset default styling for dialogs.
 */
+
 .tailwind dialog {
   padding: 0;
 }
+
 /*
 Prevent resizing textareas horizontally by default.
 */
+
 .tailwind textarea {
   resize: vertical;
 }
+
 /*
 1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
 2. Set the default placeholder color to the user's configured gray 400 color.
 */
+
 .tailwind input::-moz-placeholder, .tailwind textarea::-moz-placeholder {
   opacity: 1; /* 1 */
   color: #9ca3af; /* 2 */
 }
+
 .tailwind input::placeholder,.tailwind textarea::placeholder {
   opacity: 1; /* 1 */
   color: #9ca3af; /* 2 */
 }
+
 /*
 Set the default cursor for buttons.
 */
+
 .tailwind button,.tailwind [role="button"] {
   cursor: pointer;
 }
+
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
+
 .tailwind :disabled {
   cursor: default;
 }
+
 /*
 1. Make replaced elements \`display: block\` by default. (https://github.com/mozdevs/cssremedy/issues/14)
 2. Add \`vertical-align: middle\` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
    This can trigger a poorly considered lint error in some tools but is included by design.
 */
+
 .tailwind img,.tailwind svg,.tailwind video,.tailwind canvas,.tailwind audio,.tailwind iframe,.tailwind embed,.tailwind object {
   display: block; /* 1 */
   vertical-align: middle; /* 2 */
 }
+
 /*
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
 */
+
 .tailwind img,.tailwind video {
   max-width: 100%;
   height: auto;
 }
+
 /* Make elements with the HTML hidden attribute stay hidden by default */
+
 .tailwind [hidden] {
   display: none;
 }
+
 .tailwind *,.tailwind ::before,.tailwind ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -364,6 +436,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
 .tailwind ::backdrop {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -417,220 +490,300 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
 .tailwind .\\!container {
   width: 100% !important;
 }
+
 .tailwind .container {
   width: 100%;
 }
+
 @media (min-width: 640px) {
-  .tailwind .\\!container {
+
+.tailwind .\\!container {
     max-width: 640px !important;
   }
 }
+
 @media (min-width: 640px) {
-  .tailwind .container {
+
+.tailwind .container {
     max-width: 640px;
   }
 }
+
 @media (min-width: 768px) {
-  .tailwind .\\!container {
+
+.tailwind .\\!container {
     max-width: 768px !important;
   }
 }
+
 @media (min-width: 768px) {
-  .tailwind .container {
+
+.tailwind .container {
     max-width: 768px;
   }
 }
+
 @media (min-width: 1024px) {
-  .tailwind .\\!container {
+
+.tailwind .\\!container {
     max-width: 1024px !important;
   }
 }
+
 @media (min-width: 1024px) {
-  .tailwind .container {
+
+.tailwind .container {
     max-width: 1024px;
   }
 }
+
 @media (min-width: 1280px) {
-  .tailwind .\\!container {
+
+.tailwind .\\!container {
     max-width: 1280px !important;
   }
 }
+
 @media (min-width: 1280px) {
-  .tailwind .container {
+
+.tailwind .container {
     max-width: 1280px;
   }
 }
+
 @media (min-width: 1536px) {
-  .tailwind .\\!container {
+
+.tailwind .\\!container {
     max-width: 1536px !important;
   }
 }
+
 @media (min-width: 1536px) {
-  .tailwind .container {
+
+.tailwind .container {
     max-width: 1536px;
   }
 }
+
 .tailwind p {
     font-size: 1rem;
     font-weight: 500;
     line-height: 165%;
   }
+
 .tailwind .relative {
   position: relative !important;
 }
+
 .tailwind .ml-6 {
   margin-left: 1.5rem !important;
 }
+
 .tailwind .flex {
   display: flex !important;
 }
+
 .tailwind .h-10 {
   height: 2.5rem !important;
 }
+
 .tailwind .h-16 {
   height: 4rem !important;
 }
+
 .tailwind .h-8 {
   height: 2rem !important;
 }
+
 .tailwind .h-\\[28rem\\] {
   height: 28rem !important;
 }
+
 .tailwind .h-fit {
   height: -moz-fit-content !important;
   height: fit-content !important;
 }
+
 .tailwind .h-full {
   height: 100% !important;
 }
+
 .tailwind .max-h-\\[38rem\\] {
   max-height: 38rem !important;
 }
+
 .tailwind .min-h-full {
   min-height: 100% !important;
 }
+
 .tailwind .w-10 {
   width: 2.5rem !important;
 }
+
 .tailwind .w-16 {
   width: 4rem !important;
 }
+
 .tailwind .w-\\[28\\.5rem\\] {
   width: 28.5rem !important;
 }
+
 .tailwind .w-auto {
   width: auto !important;
 }
+
 .tailwind .w-fit {
   width: -moz-fit-content !important;
   width: fit-content !important;
 }
+
 .tailwind .w-full {
   width: 100% !important;
 }
+
 .tailwind .min-w-\\[500px\\] {
   min-width: 500px !important;
 }
+
 .tailwind .flex-shrink-0 {
   flex-shrink: 0 !important;
 }
+
 .tailwind .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
+
 .tailwind .resize {
   resize: both !important;
 }
+
 .tailwind .flex-col {
   flex-direction: column !important;
 }
+
 .tailwind .flex-wrap {
   flex-wrap: wrap !important;
 }
+
 .tailwind .items-center {
   align-items: center !important;
 }
+
 .tailwind .justify-start {
   justify-content: flex-start !important;
 }
+
 .tailwind .justify-between {
   justify-content: space-between !important;
 }
+
 .tailwind .gap-1 {
   gap: 0.25rem !important;
 }
+
 .tailwind .gap-10 {
   gap: 2.5rem !important;
 }
+
 .tailwind .gap-4 {
   gap: 1rem !important;
 }
+
 .tailwind .overflow-visible {
   overflow: visible !important;
 }
+
 .tailwind .text-ellipsis {
   text-overflow: ellipsis !important;
 }
+
 .tailwind .text-nowrap {
   text-wrap: nowrap !important;
 }
+
 .tailwind .text-pretty {
   text-wrap: pretty !important;
 }
+
 .tailwind .rounded-2xl {
   border-radius: 1rem !important;
 }
+
 .tailwind .rounded-full {
   border-radius: 9999px !important;
 }
+
 .tailwind .rounded-lg {
   border-radius: 0.5rem !important;
 }
+
 .tailwind .border-2 {
   border-width: 2px !important;
 }
+
 .tailwind .border-b-\\[1px\\] {
   border-bottom-width: 1px !important;
 }
+
 .tailwind .border-grayBorder {
   border-color: rgba(0, 0, 0, 0.21) !important;
 }
+
 .tailwind .border-red-500 {
   --tw-border-opacity: 1 !important;
   border-color: rgba(239, 68, 68, 1) !important;
   border-color: rgba(239, 68, 68, var(--tw-border-opacity)) !important;
 }
+
 .tailwind .bg-white {
   --tw-bg-opacity: 1 !important;
   background-color: rgba(255, 255, 255, 1) !important;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity)) !important;
 }
+
 .tailwind .object-cover {
   -o-object-fit: cover !important;
      object-fit: cover !important;
 }
+
 .tailwind .p-6 {
   padding: 1.5rem !important;
 }
+
 .tailwind .p-8 {
   padding: 2rem !important;
 }
+
 .tailwind .pb-6 {
   padding-bottom: 1.5rem !important;
 }
+
 .tailwind .pt-3 {
   padding-top: 0.75rem !important;
 }
+
 .tailwind .font-extrabold {
   font-weight: 800 !important;
 }
+
 .tailwind .text-\\[\\#a3a3a3\\] {
   --tw-text-opacity: 1 !important;
   color: rgba(163, 163, 163, 1) !important;
   color: rgba(163, 163, 163, var(--tw-text-opacity)) !important;
 }
+
+.tailwind .opacity-0 {
+  opacity: 0 !important;
+}
+
+.tailwind .opacity-100 {
+  opacity: 1 !important;
+}
+
 .tailwind .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter !important;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter !important;
@@ -638,59 +791,91 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
   transition-duration: 150ms !important;
 }
+
 .tailwind .transition-all {
   transition-property: all !important;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
   transition-duration: 150ms !important;
 }
+
 .tailwind .transition-transform {
   transition-property: transform !important;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
   transition-duration: 150ms !important;
 }
+
+.tailwind .transition-opacity {
+  transition-property: opacity !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
 .tailwind .duration-300 {
   transition-duration: 300ms !important;
 }
+
 .tailwind .duration-500 {
   transition-duration: 500ms !important;
 }
+
+.tailwind .duration-700 {
+  transition-duration: 700ms !important;
+}
+
 .tailwind .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
+
+.tailwind .ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1) !important;
+}
+
 .tailwind {
   box-sizing: border-box;
 }
+
 .hover\\:text-\\[\\#fa4f20\\]:hover {
   --tw-text-opacity: 1 !important;
   color: rgba(250, 79, 32, 1) !important;
   color: rgba(250, 79, 32, var(--tw-text-opacity)) !important;
 }
+
 @media (max-width: 980px) {
+
   .max-\\[980px\\]\\:min-h-\\[30rem\\] {
     min-height: 30rem !important;
   }
+
   .max-\\[980px\\]\\:max-w-\\[25rem\\] {
     max-width: 25rem !important;
   }
 }
+
 @media (max-width: 766px) {
+
   .max-\\[766px\\]\\:mt-\\[-0\\.5rem\\] {
     margin-top: -0.5rem !important;
   }
+
   .max-\\[766px\\]\\:flex-col {
     flex-direction: column !important;
   }
+
   .max-\\[766px\\]\\:pb-3 {
     padding-bottom: 0.75rem !important;
   }
+
   .max-\\[766px\\]\\:pt-1 {
     padding-top: 0.25rem !important;
   }
 }
+
 @media (max-width: 500px) {
+
   .max-\\[500px\\]\\:min-h-\\[35rem\\] {
     min-height: 35rem !important;
   }
+
   .max-\\[500px\\]\\:max-w-\\[20rem\\] {
     max-width: 20rem !important;
   }
@@ -17585,6 +17770,17 @@ var App = function App() {
     _React$useState6 = _slicedToArray(_React$useState5, 2),
     isAnimating = _React$useState6[0],
     setIsAnimating = _React$useState6[1];
+  var _React$useState7 = react.useState(null),
+    _React$useState8 = _slicedToArray(_React$useState7, 2),
+    touchStart = _React$useState8[0],
+    setTouchStart = _React$useState8[1];
+  var _React$useState9 = react.useState(null),
+    _React$useState10 = _slicedToArray(_React$useState9, 2),
+    touchEnd = _React$useState10[0],
+    setTouchEnd = _React$useState10[1];
+
+  // Minimum swipe distance (in px)
+  var minSwipeDistance = 50;
 
   // Calculate base width based on viewport
   var getBaseWidth = function getBaseWidth() {
@@ -17596,10 +17792,10 @@ var App = function App() {
     }
     return 28.5 * 16; // 28.5rem in pixels for desktop
   };
-  var _React$useState7 = react.useState(getBaseWidth()),
-    _React$useState8 = _slicedToArray(_React$useState7, 2),
-    baseWidth = _React$useState8[0],
-    setBaseWidth = _React$useState8[1];
+  var _React$useState11 = react.useState(getBaseWidth()),
+    _React$useState12 = _slicedToArray(_React$useState11, 2),
+    baseWidth = _React$useState12[0],
+    setBaseWidth = _React$useState12[1];
 
   // Load testimonials using MutationObserver
   react.useEffect(function () {
@@ -17693,6 +17889,37 @@ var App = function App() {
       return clearTimeout(timer);
     };
   }, [currentIndex, testimonials.length, isAnimating]);
+  var onTouchStart = function onTouchStart(e) {
+    setTouchEnd(null); // Reset touchEnd
+    setTouchStart(e.touches[0].clientX);
+  };
+  var onTouchMove = function onTouchMove(e) {
+    setTouchEnd(e.touches[0].clientX);
+  };
+  var onTouchEnd = function onTouchEnd() {
+    if (!touchStart || !touchEnd) return;
+    var distance = touchStart - touchEnd;
+    var isLeftSwipe = distance > minSwipeDistance;
+    var isRightSwipe = distance < -minSwipeDistance;
+    if (isLeftSwipe) {
+      // Handle next slide
+      if (!isAnimating) {
+        setIsAnimating(true);
+        setCurrentIndex(function (prev) {
+          return prev + 1;
+        });
+      }
+    }
+    if (isRightSwipe) {
+      // Handle previous slide
+      if (!isAnimating) {
+        setIsAnimating(true);
+        setCurrentIndex(function (prev) {
+          return prev - 1;
+        });
+      }
+    }
+  };
   if (!testimonials.length) {
     console.log("Waiting for testimonials to load...");
     return /*#__PURE__*/react.createElement("div", null, "Loading testimonials...");
@@ -17717,7 +17944,10 @@ var App = function App() {
     className: "tailwind w-fit relative"
   }, /*#__PURE__*/react.createElement("div", {
     id: "testimonialContainer",
-    className: "flex w-fit gap-10 overflow-visible"
+    className: "flex w-fit gap-10 overflow-visible",
+    onTouchStart: onTouchStart,
+    onTouchMove: onTouchMove,
+    onTouchEnd: onTouchEnd
   }, /*#__PURE__*/react.createElement("div", {
     style: {
       transform: "translateX(".concat(translateX, "px)"),

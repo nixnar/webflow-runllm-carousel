@@ -6,6 +6,11 @@ const App = () => {
   const [testimonials, setTestimonials] = React.useState([]);
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const [isAnimating, setIsAnimating] = React.useState(false);
+  const [touchStart, setTouchStart] = React.useState(null);
+  const [touchEnd, setTouchEnd] = React.useState(null);
+
+  // Minimum swipe distance (in px)
+  const minSwipeDistance = 50;
 
   // Calculate base width based on viewport
   const getBaseWidth = () => {
@@ -114,6 +119,38 @@ const App = () => {
     return () => clearTimeout(timer);
   }, [currentIndex, testimonials.length, isAnimating]);
 
+  const onTouchStart = (e) => {
+    setTouchEnd(null); // Reset touchEnd
+    setTouchStart(e.touches[0].clientX);
+  };
+
+  const onTouchMove = (e) => {
+    setTouchEnd(e.touches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      // Handle next slide
+      if (!isAnimating) {
+        setIsAnimating(true);
+        setCurrentIndex((prev) => prev + 1);
+      }
+    }
+    if (isRightSwipe) {
+      // Handle previous slide
+      if (!isAnimating) {
+        setIsAnimating(true);
+        setCurrentIndex((prev) => prev - 1);
+      }
+    }
+  };
+
   if (!testimonials.length) {
     console.log("Waiting for testimonials to load...");
     return <div>Loading testimonials...</div>;
@@ -146,6 +183,9 @@ const App = () => {
       <div
         id="testimonialContainer"
         className="flex w-fit gap-10 overflow-visible"
+        onTouchStart={onTouchStart}
+        onTouchMove={onTouchMove}
+        onTouchEnd={onTouchEnd}
       >
         <div
           style={{
