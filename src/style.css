@@ -1,0 +1,20 @@
+.tailwind {
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  box-sizing: border-box;
+}
+
+@layer components {
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 165%;
+  }
+  .newborder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
