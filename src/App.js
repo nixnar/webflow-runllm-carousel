@@ -30,7 +30,7 @@ const App = () => {
     const getTestimonials = () => {
       if (window.webflowCmsData?.testimonials) {
         const testimonialsData = window.webflowCmsData.testimonials;
-        console.log("Found testimonials:", testimonialsData);
+        //console.log("Found testimonials:", testimonialsData);
         setTestimonials(testimonialsData);
         setCurrentIndex(testimonialsData.length); // Start from middle set
         return true;
@@ -65,18 +65,20 @@ const App = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Add effect to log state changes
+  /*// Add effect to log state changes
   React.useEffect(() => {
     console.log("Current state:", {
       testimonials: testimonials,
       currentIndex: currentIndex,
       isAnimating: isAnimating,
     });
+    
   }, [testimonials, currentIndex, isAnimating]);
-
+*/
   // Handle slide controls after testimonials are loaded
   React.useEffect(() => {
-    if (!testimonials.length) return;
+    if (!testimonials.length) r;
+    eturn;
 
     const handleNext = () => {
       if (isAnimating) return;
@@ -152,7 +154,7 @@ const App = () => {
   };
 
   if (!testimonials.length) {
-    console.log("Waiting for testimonials to load...");
+    //console.log("Waiting for testimonials to load...");
     return <div>Loading testimonials...</div>;
   }
 
@@ -166,7 +168,7 @@ const App = () => {
   const gap = 40; // 40px gap
   const slideWidth = baseWidth + gap;
   const translateX = -(currentIndex * slideWidth);
-
+  /*
   console.log("Slide calculations:", {
     baseWidth,
     gap,
@@ -177,7 +179,7 @@ const App = () => {
     visibleSlides: testimonials.length,
     viewport: window.innerWidth,
   });
-
+*/
   return (
     <div className="tailwind w-fit relative">
       <div

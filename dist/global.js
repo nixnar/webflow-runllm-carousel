@@ -17803,7 +17803,7 @@ var App = function App() {
       var _window$webflowCmsDat;
       if ((_window$webflowCmsDat = window.webflowCmsData) !== null && _window$webflowCmsDat !== void 0 && _window$webflowCmsDat.testimonials) {
         var testimonialsData = window.webflowCmsData.testimonials;
-        console.log("Found testimonials:", testimonialsData);
+        //console.log("Found testimonials:", testimonialsData);
         setTestimonials(testimonialsData);
         setCurrentIndex(testimonialsData.length); // Start from middle set
         return true;
@@ -17837,18 +17837,20 @@ var App = function App() {
     };
   }, []);
 
-  // Add effect to log state changes
-  react.useEffect(function () {
+  /*// Add effect to log state changes
+  React.useEffect(() => {
     console.log("Current state:", {
       testimonials: testimonials,
       currentIndex: currentIndex,
-      isAnimating: isAnimating
+      isAnimating: isAnimating,
     });
+    
   }, [testimonials, currentIndex, isAnimating]);
-
+  */
   // Handle slide controls after testimonials are loaded
   react.useEffect(function () {
-    if (!testimonials.length) return;
+    if (!testimonials.length) r;
+    eturn;
     var handleNext = function handleNext() {
       if (isAnimating) return;
       setIsAnimating(true);
@@ -17921,7 +17923,7 @@ var App = function App() {
     }
   };
   if (!testimonials.length) {
-    console.log("Waiting for testimonials to load...");
+    //console.log("Waiting for testimonials to load...");
     return /*#__PURE__*/react.createElement("div", null, "Loading testimonials...");
   }
 
@@ -17930,16 +17932,18 @@ var App = function App() {
   var gap = 40; // 40px gap
   var slideWidth = baseWidth + gap;
   var translateX = -(currentIndex * slideWidth);
+  /*
   console.log("Slide calculations:", {
-    baseWidth: baseWidth,
-    gap: gap,
-    slideWidth: slideWidth,
-    translateX: translateX,
-    currentIndex: currentIndex,
+    baseWidth,
+    gap,
+    slideWidth,
+    translateX,
+    currentIndex,
     totalSlides: extendedTestimonials.length,
     visibleSlides: testimonials.length,
-    viewport: window.innerWidth
+    viewport: window.innerWidth,
   });
+  */
   return /*#__PURE__*/react.createElement("div", {
     className: "tailwind w-fit relative"
   }, /*#__PURE__*/react.createElement("div", {
